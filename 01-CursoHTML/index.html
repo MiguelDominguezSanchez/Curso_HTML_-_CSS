@@ -8,9 +8,16 @@
   <title>Aprendiendo HTML</title>
   <!-- descripción - no más de 165 carácteres --> 
   <meta name="description" content="En esta página estamos aprendiendo los fundamentos de HTML con @jonmircha">
+  <style>
+    h2 {
+      color: orangered;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/estilos.css">
 </head>
 
 <body>
+  <h2>Aprendiendo HTML</h2>
   <!--  Esto es un comentario -->
   <!-- 
     Enlaces de la sección de introducción a HTMl y su documentación
@@ -24,6 +31,90 @@
 
   <p>Hola, Escribiendo mi primer documento HTML</p>
   <p>Aprendiendo, sobre Diseño Web</p>
-  
+  <hr>
+  <h2>Encabezados HTML</h2>
+  <h1>Encabezado de nivel 1 – sólo puede existir un h1 por documento html</h1>
+  <h2>Encabezado de nivel 2</h2>
+  <h3>Encabezado de nivel 3</h3>
+  <h4>Encabezado de nivel 4</h4>
+  <h5>Encabezado de nivel 5</h5>
+  <h6>Encabezado de nivel 6</h6>
+  <hr>
+  <h2>Etiquetas de texto básicas</h2>
+  <p>Un párrafo</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas vitae quidem quam eveniet excepturi esse debitis quis perspiciatis magnam dolorum quos recusandae nam accusantium facere, autem beatae minima. Fuga.</p>
+  <p>Palabras en: <b>negrita</b>, <i>itálica</i>, <u>subrayado</u>, e=mc<sup>2</sup>, H<sub>2</sub>O, <mark>marcatexto</mark> <small>letras pequeñas</small> </p>
+  <p>
+    <hr>
+    <h2>Etiquetas de texto semánticas</h2>
+    <strong>Este texto es importante</strong>. <em>Este texto hace énfasis</em>.
+  </p>
+  <blockquote>Yo solo se que no se nada</blockquote>
+  <cite>Sócrates</cite>
+  <hr>
+  <h2>Etiquetas de saltos</h2>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Modi ratione accusantium quaerat iure aspernatur quam possimus quidem vitae optio, <br><br> a provident sequi reiciendis recusandae laudantium illum laborum quia consequatur neque?</p>
+  <hr>
+  <h2>Etiquetas de Formateo</h2>
+  <p>
+    <pre>
+      Tareas por hacer
+      – HTML
+        – Editar de grabar las seccioones de este curso.
+        – Editar en uun solo video
+      – CSS
+        – Comenzar a grabar secciones CSS
+        – Editar en un solo Video
+    </pre>
+  </p>
+  <p>
+    <code>Este texto está en formato de código</code>
+  </p>
+  <p>
+    <pre>
+      <code>
+        import React from "react";
+        import Title from "./Title";
+
+        function App {
+            return &lt;Title /&gt;
+        }
+      </code>
+    </pre>
+  </p>
+  <hr>
+  <h2>Etiquetas Semánticas Estructurales</h2>
+  <div>Es una etiqueta contenedora que no tiene semántica</div>
+  <header>header – Cabecera de un sitio web o de una sección</header>
+  <main>
+    main – Define la sección principal del documento, sólo puede existir una etiqueta main por documento
+  </main>
+  <footer>footer – Pié de página de un sitio web o una sección</footer>
+  <nav>nav – Representa una navegación</nav>
+  <article>
+    article – Representa una sección auto–contenido (que  por sí sola se explica)
+  </article>
+  <aside>aside – Representa contenido complementario o secundario</aside>
+  <section>section – Representa una sección de contenido genérico</section>
+  <address>address – Representa una dirección física</address>
+  <hr>
+  <h2>Etiquetas de Bloque VS Etiquetas de Línea</h2>
+  <div style="background-color: yellow; color: red;">La etiqueta de bloque por excelencia es la div, una etiqueta de bloque es aquella que genera saltos de línea con sus etiquetas hermanas</div>
+  <span style="background-color: green">La etiqueta de línea por excelencia es la etiqueta span, una etiqueta de línea sólo ocupa el espacio necesario que tiene su contenido.</span>
+  <span>Hola soy otra span</span>
+  <hr>
+  <h2>Estilos CSS en HTML</h2>
+  <hr>
+  <h2>Scripts en HTML</h2>
+  <hr>
+  <h2>Imágenes</h2>
+  <img src="img/periodic-table-of-html-elements.png" alt="Tabla Periódica de los elementos HTML">
+  <img src="img/puesta-sol.jpg" alt="Puesta del sol y Kenai">
+  <img src="img/this-is-fine.gif" alt="">
+  <img src="img/kEnAi.svg" alt="">
+  <script>
+    console.log("hola estamos aprendiendo HTML");
+  </script>
+  <script src="assets/codigo.js"></script>
 </body>
 </html>
